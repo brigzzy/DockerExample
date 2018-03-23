@@ -6,7 +6,7 @@ MAINTAINER brigzzy
 ADD ./html /var/www/html
 
 # Update the repository sources list
-RUN apt update && apt install -y apache2 php libapache2-mod-php php-mcrypt && apt-get clean
+RUN apt update && apt install -y apache2 php libapache2-mod-php php-mcrypt php-mysql && apt-get clean
 
 EXPOSE 80
 CMD apachectl -D FOREGROUND

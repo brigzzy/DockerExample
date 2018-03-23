@@ -1,0 +1,8 @@
+FROM mysql
+
+MAINTAINER brigzzy
+
+ENV MYSQL_ROOT_PASSWORD="1qaz0okM"
+
+EXPOSE 3306
+

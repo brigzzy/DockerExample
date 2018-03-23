@@ -3,6 +3,6 @@ version: '2'
 services:
   app:
     build: .
-    container_name: mm_helper
+    container_name: docker_mysql_web
     ports:
      - "80:80"

@@ -7,8 +7,8 @@ stages:
 - release
 
 variables:
-  TEST_IMAGE: gitlab.brigzzy.net:5555/brigzzy/metamagic-helper:$CI_COMMIT_REF_NAME
-  RELEASE_IMAGE: gitlab.brigzzy.net:5555/brigzzy/metamagic-helper:latest
+  TEST_IMAGE: gitlab.brigzzy.net:5555/brigzzy/docker-mysql-test:$CI_COMMIT_REF_NAME
+  RELEASE_IMAGE: gitlab.brigzzy.net:5555/brigzzy/docker-mysql-test:latest
 
 before_script:
   - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN gitlab.brigzzy.net:5555
